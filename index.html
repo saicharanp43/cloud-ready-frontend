@@ -1,177 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cloud-Ready Frontend</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
+<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>FoodieHub - Food Delivery</title> <link rel="stylesheet" href="style.css"> </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">CloudReady</div>
+<!-- Header -->
+<header class="header">
+    <div class="container nav">
+        <div class="logo">Foodie<span>Hub</span></div>
+
+        <div class="location">
+            📍 <span>Hyderabad</span>
+        </div>
+
+        <div class="search-box">
+            🔍
+            <input type="text" placeholder="Search for restaurant, cuisine or dish">
+        </div>
 
         <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
+            <a href="#">Log in</a>
+            <a href="#">Sign up</a>
         </div>
-    </nav>
+    </div>
+</header>
 
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Discover the best food around you</h1>
+        <p>Order delicious food from your favourite restaurants.</p>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+        <div class="hero-search">
+            📍 Hyderabad
+            <span>|</span>
+            🔍
+            <input type="text" placeholder="Search for food or restaurants">
+            <button>Search</button>
+        </div>
+    </div>
+</section>
 
-        <div class="hero-content">
+<!-- Categories -->
+<section class="container section">
+    <h2>Explore food</h2>
 
-            <p class="tag">☁️ CLOUD-READY WEB APPLICATION</p>
+    <div class="categories">
 
-            <h1>
-                My First Web Application
-                <span>Deployed on AWS</span>
-            </h1>
+        <div class="category">
+            <div class="category-icon">🍕</div>
+            <h3>Pizza</h3>
+        </div>
 
-            <p class="description">
-                A simple static website built using HTML and CSS,
-                hosted on an AWS EC2 instance using Apache Web Server.
+        <div class="category">
+            <div class="category-icon">🍔</div>
+            <h3>Burgers</h3>
+        </div>
+
+        <div class="category">
+            <div class="category-icon">🍗</div>
+            <h3>Chicken</h3>
+        </div>
+
+        <div class="category">
+            <div class="category-icon">🍛</div>
+            <h3>Biryani</h3>
+        </div>
+
+        <div class="category">
+            <div class="category-icon">🥗</div>
+            <h3>Healthy</h3>
+        </div>
+
+        <div class="category">
+            <div class="category-icon">🍰</div>
+            <h3>Desserts</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Restaurants -->
+<section class="container section">
+    <div class="section-heading">
+        <h2>Popular restaurants</h2>
+        <a href="#">View all →</a>
+    </div>
+
+    <div class="restaurants">
+
+        <div class="restaurant-card">
+            <div class="restaurant-image biryani">
+                <span class="offer">20% OFF</span>
+            </div>
+
+            <div class="restaurant-info">
+                <div class="restaurant-title">
+                    <h3>Hyderabad Spice House</h3>
+                    <span class="rating">★ 4.5</span>
+                </div>
+
+                <p>Biryani • North Indian • Mughlai</p>
+
+                <div class="restaurant-meta">
+                    <span>₹300 for two</span>
+                    <span>• 30 min</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <div class="restaurant-image pizza">
+                <span class="offer">30% OFF</span>
+            </div>
+
+            <div class="restaurant-info">
+                <div class="restaurant-title">
+                    <h3>Urban Pizza</h3>
+                    <span class="rating">★ 4.3</span>
+                </div>
+
+                <p>Pizza • Italian • Fast Food</p>
+
+                <div class="restaurant-meta">
+                    <span>₹450 for two</span>
+                    <span>• 25 min</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <div class="restaurant-image burger">
+                <span class="offer">15% OFF</span>
+            </div>
+
+            <div class="restaurant-info">
+                <div class="restaurant-title">
+                    <h3>Burger Street</h3>
+                    <span class="rating">★ 4.4</span>
+                </div>
+
+                <p>Burgers • American • Beverages</p>
+
+                <div class="restaurant-meta">
+                    <span>₹350 for two</span>
+                    <span>• 20 min</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <div class="restaurant-image indian">
+                <span class="offer">25% OFF</span>
+            </div>
+
+            <div class="restaurant-info">
+                <div class="restaurant-title">
+                    <h3>Royal Indian Kitchen</h3>
+                    <span class="rating">★ 4.6</span>
+                </div>
+
+                <p>Indian • Chinese • Tandoor</p>
+
+                <div class="restaurant-meta">
+                    <span>₹500 for two</span>
+                    <span>• 35 min</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <div class="restaurant-image cafe">
+                <span class="offer">10% OFF</span>
+            </div>
+
+            <div class="restaurant-info">
+                <div class="restaurant-title">
+                    <h3>Daily Brew Cafe</h3>
+                    <span class="rating">★ 4.2</span>
+                </div>
+
+                <p>Cafe • Coffee • Desserts</p>
+
+                <div class="restaurant-meta">
+                    <span>₹400 for two</span>
+                    <span>• 22 min</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="restaurant-card">
+            <div class="restaurant-image south">
+                <span class="offer">20% OFF</span>
+            </div>
+
+            <div class="restaurant-info">
+                <div class="restaurant-title">
+                    <h3>South Indian Corner</h3>
+                    <span class="rating">★ 4.5</span>
+                </div>
+
+                <p>South Indian • Breakfast • Snacks</p>
+
+                <div class="restaurant-meta">
+                    <span>₹250 for two</span>
+                    <span>• 18 min</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- App section -->
+<section class="app-section">
+    <div class="container app-content">
+        <div>
+            <h2>Get your favourite food delivered</h2>
+            <p>
+                Discover restaurants, explore new dishes and
+                order delicious meals from the comfort of your home.
             </p>
-
-            <a href="#project" class="button">View Project</a>
-
+            <button class="app-button">Explore Restaurants</button>
         </div>
 
-    </section>
+        <div class="app-icon">📱🍔</div>
+    </div>
+</section>
 
+<!-- Footer -->
+<footer>
+    <div class="container footer-content">
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-
-        <h2>Technologies Used</h2>
-
-        <p class="section-description">
-            Technologies used to build and deploy this cloud-ready application.
-        </p>
-
-        <div class="cards">
-
-            <div class="card">
-                <div class="icon">🌐</div>
-                <h3>HTML5</h3>
-                <p>
-                    Used to create the structure and content
-                    of the web application.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="icon">🎨</div>
-                <h3>CSS3</h3>
-                <p>
-                    Used to design and style the website
-                    with a responsive layout.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="icon">🔧</div>
-                <h3>Git & GitHub</h3>
-                <p>
-                    Used for version control and storing
-                    the application source code.
-                </p>
-            </div>
-
-            <div class="card">
-                <div class="icon">☁️</div>
-                <h3>AWS EC2</h3>
-                <p>
-                    Used to host the web application
-                    on a cloud-based virtual server.
-                </p>
-            </div>
-
+        <div>
+            <h2>Foodie<span>Hub</span></h2>
+            <p>Your favourite food, delivered.</p>
         </div>
 
-    </section>
-
-
-    <!-- Project Section -->
-    <section id="project" class="section project-section">
-
-        <h2>Cloud Deployment</h2>
-
-        <p class="section-description">
-            This project demonstrates the basic deployment of a
-            static frontend application on AWS.
-        </p>
-
-        <div class="deployment">
-
-            <div class="deployment-step">
-                <span>01</span>
-                <h3>Development</h3>
-                <p>HTML and CSS website developed locally.</p>
-            </div>
-
-            <div class="arrow">→</div>
-
-            <div class="deployment-step">
-                <span>02</span>
-                <h3>GitHub</h3>
-                <p>Source code stored using Git and GitHub.</p>
-            </div>
-
-            <div class="arrow">→</div>
-
-            <div class="deployment-step">
-                <span>03</span>
-                <h3>AWS EC2</h3>
-                <p>Application deployed on an EC2 server.</p>
-            </div>
-
-            <div class="arrow">→</div>
-
-            <div class="deployment-step">
-                <span>04</span>
-                <h3>Apache</h3>
-                <p>Apache serves the website to users.</p>
-            </div>
-
+        <div>
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact</a>
         </div>
 
-    </section>
+        <div>
+            <h4>For Restaurants</h4>
+            <a href="#">Partner With Us</a>
+            <a href="#">Business Support</a>
+        </div>
 
+        <div>
+            <h4>Follow Us</h4>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    </div>
 
-        <h2>Cloud Deployment Successful 🚀</h2>
+    <div class="copyright">
+        © 2026 FoodieHub. All rights reserved.
+    </div>
+</footer>
 
-        <p>
-            This website is part of my DevOps and Cloud learning journey.
-        </p>
-
-        <p class="status">
-            ● Application Ready for Production
-        </p>
-
-    </section>
-
-
-    <!-- Footer -->
-    <footer>
-
-        <p>
-            © 2026 Cloud-Ready Frontend | AWS EC2 Deployment Project
-        </p>
-
-    </footer>
-
-</body>
-</html>
-```
+</body> </html>
